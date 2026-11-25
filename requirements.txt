@@ -1,0 +1,18 @@
+# moyu —— 极简桌面悬浮看板 v1.0
+# 运行环境：Python 3.10+
+#
+# 本项目除 requests 外仅使用 Python 标准库（tkinter 随官方安装包自带）。
+# 安装：
+#   pip install -r requirements.txt
+#
+# 如需复制到离线环境，可先下载安装包：
+#   pip download -r requirements.txt -d ./packages
+#   pip install --no-index --find-links ./packages -r requirements.txt
+
+requests>=2.31.0,<3.0.0
+
+# 以下为 requests 的传递依赖，通常由 pip 自动安装，此处显式声明以保证版本可复现。
+certifi>=2023.7.22
+charset-normalizer>=3.0.0
+idna>=3.0
+urllib3>=2.0.0
